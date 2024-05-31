@@ -1,11 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SPA - Todos</title>
 </head>
 <body>
-    <h1>Pagina Web Alexis</h1>
+    <!-- Barra de navegación -->
+    <nav>
+        <ul>
+            <li><a href="#promociones">Promociones</a></li>
+            <li><a href="#fotos">Fotos</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#mapa">Mapa</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Apartado principal con imagen de fondo -->
+    <header>
+        <div class="header-content">
+            <h1>SPA - Todos</h1>
+            <p>Regálate un momento de paz y consiente a tu piel en el mejor lugar</p>
+            <div class="reservation">
+                <input type="text" placeholder="Reserva tu cita" aria-label="Reserva tu cita">
+                <input type="text" placeholder="Código promocional" aria-label="Código promocional">
+            </div>
+        </div>
+    </header>
+
+    <!-- Apartado de cartas de servicios -->
+    <section id="servicios">
+        <article class="servicio">
+            <h2>Masaje de pies</h2>
+            <img src="imagen_pies.jpg" alt="Masaje de pies">
+            <p>Esta es una descripción de la opción en cuestión ...</p>
+            <p>$65</p>
+            <button>Reservar</button>
+        </article>
+        <article class="servicio">
+            <h2>Masaje relajante</h2>
+            <img src="imagen_relajante.jpg" alt="Masaje relajante">
+            <p>Esta es una descripción de la opción en cuestión ...</p>
+            <p>$60</p>
+            <button>Reservar</button>
+        </article>
+        <article class="servicio">
+            <h2>Masaje con bambú</h2>
+            <img src="imagen_bambu.jpg" alt="Masaje con bambú">
+            <p>Esta es una descripción de la opción en cuestión ...</p>
+            <p>$58</p>
+            <button>Reservar</button>
+        </article>
+    </section>
+
+    <!-- Apartado de membresías -->
+    <section id="membresias">
+        <h2>Hazte socio y prueba nuestros beneficios</h2>
+        <div class="membresia">
+            <div class="icono">GOLD</div>
+            <button>Ver condiciones</button>
+            <ul>
+                <li>Gimnasio</li>
+                <li>Piscina</li>
+                <li>Todos los tratamientos</li>
+            </ul>
+        </div>
+        <div class="membresia">
+            <div class="icono">PREMIUM</div>
+            <button>Ver condiciones</button>
+            <ul>
+                <li>Gimnasio</li>
+                <li>Todos los tratamientos</li>
+            </ul>
+        </div>
+        <div class="membresia">
+            <div class="icono">PLATE</div>
+            <button>Ver condiciones</button>
+            <ul>
+                <li>Tratamientos faciales</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#politica-cookies">Política de cookies</a></li>
+                <li><a href="#aviso-legal">Aviso legal</a></li>
+                <li><a href="#proteccion-datos">Protección de datos</a></li>
+                <li><a href="#mapa-sitio">Mapa del sitio</a></li>
+            </ul>
+        </nav>
+        <div class="redes-sociales">
+            <a href="#facebook">Facebook</a>
+            <a href="#twitter">Twitter</a>
+            <a href="#youtube">YouTube</a>
+        </div>
+    </footer>
 </body>
 </html>
