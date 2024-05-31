@@ -109,13 +109,14 @@ header .header-content {
     align-items: flex-start;
     height: 100%;
     color: var(--color-texto);
-    margin: 0 0 20% 12.5%;
+    margin: 0 0 50% 12.5%;
 }
 
 header .header-content h1 {
     font-size: var(--tamano-fuente-romanesco);
     font-family: var(--fuente-romanesto);
-    margin: 0;
+    margin-bottom: 20px;
+    font-weight: normal;
 }
 
 header .header-content h2 {
