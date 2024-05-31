@@ -79,6 +79,8 @@ nav ul li {
     display: inline;
 }
 
+
+
 nav ul li a {
     text-decoration: none;
     color: var(--color-texto);
@@ -219,7 +221,7 @@ header .header-content h2 {
     color: white;
     border: none;
     border-radius: 35px;
-    padding: 10px 15px;
+    padding: 15px 40px;
     cursor: pointer;
     font-size: 14px;
     text-transform: uppercase;
