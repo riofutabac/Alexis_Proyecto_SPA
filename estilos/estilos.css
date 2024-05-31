@@ -110,7 +110,7 @@ header .header-content {
 }
 header .header-content h1 {
     font-size: var(--tamano-fuente-grande);
-    font-family: var(--fuente-titulos);
+    font-family: var(--fuente-cursiva);
     margin: 0;
 }
 header .header-content h2 {
