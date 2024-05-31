@@ -1,11 +1,15 @@
 @font-face {
     font-family: 'Inter';
     src: url('../fuentes/Inter/Inter-Regular.ttf');
-
 }
 
 @font-face {
-    font-family: 'Titulo2';
+    font-family: 'Inter-Bold';
+    src: url('../fuentes/Inter/Bold');
+}
+
+@font-face {
+    font-family: 'Inter-SemiBold';
     src: url('../fuentes/Inter/Inter-SemiBold.ttf');
 }
 
@@ -13,6 +17,7 @@
     font-family: 'Romanesco';
     src: url('../fuentes/Romanesco/Romanesco-Regular.ttf');
 }
+
 :root {
     /* Colores */
     --color-primario: #A3A656;
@@ -30,15 +35,17 @@
 
     /* Fuentes */
     --fuente-principal: 'Inter';
-    --fuente-titulos: 'Titulo2';
-    --fuente-cursiva: 'Romanesco';
+    --fuente-titulos1: 'Inter-Bold';
+    --fuente-titulos2: 'Inter-SemiBold';
+    --fuente-romanesto:'Romanesco';
     
-
     /* Tamaños de fuente */
     --tamano-fuente-principal: 16px;
-    --tamano-fuente-titulos: 32px;
-    --tamano-fuente-grande: 96px;
-    --tamano-fuente-pequeña: 14px;
+    --tamano-fuente-titulo1: 48px;
+    --tamano-fuente-titulo2: 32px;
+    --tamano-fuente-menu: 16px;
+    --tamano-fuente-miniatura: 14px;
+    --tamano-fuente-romanesco:96px;
 
     /* Dimensiones */
     --altura-header: 70px;
@@ -50,13 +57,15 @@
     /* Otros */
     --border-radius-input: 10px;
     --border-radius-button: 35px;
+    --color-placeholder: #9E9A9A;
 }
 
 
 body {
     margin: 0;
     padding: 0;
-    font-size: var(--tamano-fuente-principal)
+    font-size: var(--tamano-fuente-principal);
+    font-family: var(--fuente-principal);
 }
 
 nav {
@@ -66,7 +75,6 @@ nav {
     align-items: center;
     padding-left: 70px; 
 }
-
 
 nav ul {
     list-style: none;
@@ -84,7 +92,8 @@ nav ul li a {
     text-decoration: none;
     color: var(--color-texto); 
     font-family: var(--fuente-principal);
-    font-size: var(--tamano-fuente-principal);
+    font-size: var(--tamano-fuente-menu);
+    text-transform: uppercase;
 }
 
 nav ul li a:hover {
@@ -92,13 +101,14 @@ nav ul li a:hover {
 }
 
 header { 
-        background-image: url('../images/main.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 100%;
-        height: 670px; 
+    background-image: url('../images/main.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 670px; 
 }
+
 header .header-content {
     display: flex;
     flex-direction: column;
@@ -108,25 +118,29 @@ header .header-content {
     color: var(--color-texto);
     margin: 0px 0px 20% 12.5%;
 }
+
 header .header-content h1 {
-    font-size: var(--tamano-fuente-grande);
-    font-family: var(--fuente-cursiva);
+    font-size: var(--tamano-fuente-romanesco);
+    font-family: var(--fuente-romanesto);
     margin: 0;
 }
+
 header .header-content h2 {
-    font-size: var(--tamano-fuente-titulos);
-    font-family: var(--fuente-titulos);
+    font-size: var(--tamano-fuente-titulo2);
+    font-family: var(--fuente-titulos2);
     margin: 0;
 }
-.reservation{
+
+.reservation {
     display: flex;
     background-color: var(--color-fondo);
-    padding: 0px 17% 0px 22% ;
+    padding: 0px 17% 0px 22%;
     align-items: center;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     height: 100px;
 }
+
 .reservation label {
     margin-right: 10px;
     margin-left: 10px; 
@@ -137,13 +151,28 @@ header .header-content h2 {
     margin: 0;
     border-radius: var(--border-radius-input);
     border: none;
+    font-size: var(--tamano-fuente-menu);
+    font-family: var(--fuente-principal);
+    color: var(--color-texto);
 }
-.reservation .reserva{
+
+.reservation input::placeholder {
+    color: var(--color-placeholder);
+    font-size: var(--tamano-fuente-menu);
+    font-family: var(--fuente-principal);
+
+}
+
+.reservation .reserva {
     width: 20%;
+    height: 40%;
 }
-.reservation .codigo{
+
+.reservation .codigo {
     width: 15%;
+    height: 40%;
 }
+
 #servicios {
     display: flex;
     flex-wrap: wrap;
@@ -159,17 +188,18 @@ header .header-content h2 {
 }
 
 #servicios .servicio h2 {
-    background-color:var(--color-primario);
+    background-color: var(--color-primario);
     color: white;
     margin: 0;
     padding: 10px;
     text-align: center;
-    font-size: var(--tamano-fuente-titulos);
+    font-size: var(--tamano-fuente-titulo2);
+    font-family: var(--fuente-titulos2);
 }
 
 #servicios .servicio img {
     display: block;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 
@@ -177,7 +207,8 @@ header .header-content h2 {
     padding: 10px;
     margin: 0;
     color: var(--color-secundario);
-    font-size: 14px;
+    font-size: var(--tamano-fuente-principal);
+    font-family: var(--fuente-principal);
 }
 
 #servicios .precio-button {
@@ -185,13 +216,13 @@ header .header-content h2 {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-  
 }
 
 #servicios .precio-button p {
     margin: 0;
-    font-size: 18px;
+    font-size: var(--tamano-fuente-titulo2);
     color: #333;
+    
 }
 
 #servicios .precio-button button {
@@ -202,20 +233,20 @@ header .header-content h2 {
     padding: 10px 15px;
     cursor: pointer;
     font-size: 14px;
+    text-transform: uppercase;
 }
 
 #servicios .precio-button button:hover {
-    background-color:var(--color-secundario);
+    background-color: var(--color-secundario);
 }
-
-
 
 footer {
     background-color: var(--color-secundario);
     padding: 20px;
     text-align: center;
 }
-footer nav{
+
+footer nav {
     background-color: var(--color-secundario);
 }
 
