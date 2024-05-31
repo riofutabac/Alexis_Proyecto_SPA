@@ -293,7 +293,11 @@ header .header-content h2 {
     font-size: 1rem;
     text-transform: uppercase;
     margin-bottom: 20px;
+    width: 68%;
+    height: 3.5rem;
 }
+
+
 
 #membresias .membresia button:hover {
     background-color: var(--color-secundario);
@@ -330,3 +334,4 @@ header .header-content h2 {
     object-fit: contain;
     margin: 11px;
 }
+
