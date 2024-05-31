@@ -170,13 +170,13 @@ header .header-content h2 {
 }
 
 .reservation .reserva {
-    width: 20%;
-    height: 35%;
+    width: 200px;
+    height: 35px;
 }
 
 .reservation .codigo {
-    width: 15%;
-    height: 35%;
+    width: 130px;
+    height: 35px;
 }
 
 #servicios {
