@@ -428,7 +428,7 @@ header .header-content h2 {
 
 }
 .usuario p:hover{
-    color: var(--color5);
+    color: var(--color-resaltar);
 }
 
 
