@@ -68,6 +68,7 @@ body {
     font-family: var(--fuente-principal);
 }
 
+
 nav {
     height: var(--altura-header);
     background-color: var(--color-primario);
@@ -75,6 +76,7 @@ nav {
     align-items: center;
     padding-left: 70px; 
 }
+
 
 nav ul {
     list-style: none;
@@ -84,9 +86,11 @@ nav ul {
     padding: 0;
 }
 
+
 nav ul li {
     display: inline;
 }
+
 
 nav ul li a {
     text-decoration: none;
@@ -95,6 +99,7 @@ nav ul li a {
     font-size: var(--tamano-fuente-menu);
     text-transform: uppercase;
 }
+
 
 nav ul li a:hover {
     color: var(--color-resaltar); 
@@ -165,12 +170,12 @@ header .header-content h2 {
 
 .reservation .reserva {
     width: 20%;
-    height: 40%;
+    height: 35%;
 }
 
 .reservation .codigo {
     width: 15%;
-    height: 40%;
+    height: 35%;
 }
 
 #servicios {
@@ -184,7 +189,7 @@ header .header-content h2 {
     background-color: #fff;
     border-radius: 15px 15px 0 0;
     overflow: hidden;
-    margin-right: 134px;
+    margin: 20px 67px; /* Margen ajustado para centrado */
 }
 
 #servicios .servicio h2 {
@@ -234,16 +239,21 @@ header .header-content h2 {
     cursor: pointer;
     font-size: 14px;
     text-transform: uppercase;
+    font-family: var(--fuente-titulos2);
 }
 
 #servicios .precio-button button:hover {
     background-color: var(--color-secundario);
 }
 
+
 footer {
+    height: var(--altura-footer); 
     background-color: var(--color-secundario);
     padding: 20px;
     text-align: center;
+    padding-left: 70px; 
+    display: flex;
 }
 
 footer nav {
