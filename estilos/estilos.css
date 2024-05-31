@@ -20,18 +20,12 @@
 
 :root {
     /* Colores */
-    --color-primario: #A3A656;
-    /* Verde oscuro */
-    --color-secundario: #384001;
-    /* Verde más oscuro */
-    --color-resaltar: #FFFF00;
-    /* Amarillo */
-    --color-fondo: #F2F6F6;
-    /* Gris claro */
-    --color-texto: #000;
-    /* Negro */
-    --color-texto-claro: #fff;
-    /* Blanco */
+    --color-primario: #A3A656; /* Verde oscuro */
+    --color-secundario: #384001; /* Verde más oscuro */
+    --color-resaltar: #FFFF00; /* Amarillo */
+    --color-fondo: #F2F6F6; /* Gris claro */
+    --color-texto: #000; /* Negro */
+    --color-texto-claro: #fff; /* Blanco */
 
     /* Fuentes */
     --fuente-principal: 'Inter';
@@ -52,13 +46,11 @@
     --altura-footer: 97px;
     --altura-inputs: 100px;
 
-
     /* Otros */
     --border-radius-input: 10px;
     --border-radius-button: 35px;
     --color-placeholder: #9E9A9A;
 }
-
 
 body {
     margin: 0;
@@ -66,8 +58,6 @@ body {
     font-size: var(--tamano-fuente-principal);
     font-family: var(--fuente-principal);
 }
-
-
 
 nav {
     height: var(--altura-header);
@@ -77,7 +67,6 @@ nav {
     padding-left: 70px;
 }
 
-
 nav ul {
     list-style: none;
     display: flex;
@@ -86,11 +75,9 @@ nav ul {
     padding: 0;
 }
 
-
 nav ul li {
     display: inline;
 }
-
 
 nav ul li a {
     text-decoration: none;
@@ -99,7 +86,6 @@ nav ul li a {
     font-size: var(--tamano-fuente-menu);
     text-transform: uppercase;
 }
-
 
 nav ul li a:hover {
     color: var(--color-resaltar);
@@ -118,10 +104,10 @@ header .header-content {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     height: 100%;
     color: var(--color-texto);
-    margin: 0px 0px 20% 12.5%;
+    margin: 0 0 20% 12.5%;
 }
 
 header .header-content h1 {
@@ -139,7 +125,7 @@ header .header-content h2 {
 .reservation {
     display: flex;
     background-color: var(--color-fondo);
-    padding: 0px 17% 0px 22%;
+    padding: 0 17% 0 22%;
     align-items: center;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -165,7 +151,6 @@ header .header-content h2 {
     color: var(--color-placeholder);
     font-size: var(--tamano-fuente-menu);
     font-family: var(--fuente-principal);
-
 }
 
 .reservation .reserva {
@@ -189,8 +174,7 @@ header .header-content h2 {
     background-color: #fff;
     border-radius: 15px 15px 0 0;
     overflow: hidden;
-    margin: 20px 67px;
-    /* Margen ajustado para centrado */
+    margin: 20px 67px; /* Margen ajustado para centrado */
 }
 
 #servicios .servicio h2 {
@@ -228,7 +212,6 @@ header .header-content h2 {
     margin: 0;
     font-size: var(--tamano-fuente-titulo2);
     color: #333;
-
 }
 
 #servicios .precio-button button {
@@ -247,9 +230,6 @@ header .header-content h2 {
     background-color: var(--color-secundario);
 }
 
-
-
-
 #membresias {
     background-color: var(--color-fondo);
     padding: 40px 20px;
@@ -261,13 +241,13 @@ header .header-content h2 {
     margin-bottom: 40px;
 }
 
-.membresias-container {
+#membresias .membresias-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
 
-.membresia {
+#membresias .membresia {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,13 +257,13 @@ header .header-content h2 {
     margin: 20px;
 }
 
-.membresia h5 {
+#membresias .membresia h5 {
     font-size: 1.5rem;
     color: var(--color-secundario);
     margin-bottom: 20px;
 }
 
-.membresia button {
+#membresias .membresia button {
     background-color: var(--color-primario);
     color: #fff;
     border: none;
@@ -297,24 +277,21 @@ header .header-content h2 {
     height: 3.5rem;
 }
 
-
-
 #membresias .membresia button:hover {
     background-color: var(--color-secundario);
 }
 
-.membresia ul {
+#membresias .membresia ul {
     padding: 0;
     margin: 0;
     text-align: center;
 }
 
-.membresia ul li {
+#membresias .membresia ul li {
     font-size: var(--tamano-fuente-miniatura);
     color: #000;
     text-align: left;
 }
-
 
 .icono-circulo {
     width: 255px;
@@ -335,10 +312,8 @@ header .header-content h2 {
     margin: 11px;
 }
 
-
-/*Footer*/
-
-.contenedorFooter{
+/* Footer */
+.contenedor-footer {
     display: flex;
     background-color: var(--color-secundario);
     justify-content: space-between;
@@ -347,7 +322,7 @@ header .header-content h2 {
     align-items: center;
 }
 
-.contenedorFooter nav{
+.contenedor-footer nav {
     background-color: var(--color-secundario);
     display: flex;
     align-items: center;
@@ -356,7 +331,7 @@ header .header-content h2 {
     width: 60%;
 }
 
-.contenedorFooter nav a{
+.contenedor-footer nav a {
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -367,19 +342,19 @@ header .header-content h2 {
     text-transform: uppercase;
 }
 
-.contenedorFooter nav a:hover{
+.contenedor-footer nav a:hover {
     color: var(--color-resaltar);
 }
 
-.contenedorFooter .redes{
+.contenedor-footer .redes {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 40%;
 }
 
-.contenedorFooter .redes p{
-    font-family:var(--fuente-principal);
+.contenedor-footer .redes p {
+    font-family: var(--fuente-principal);
     font-weight: normal;
     color: var(--color-primario);
     font-size: var(--tamano-fuente-menu);
@@ -388,7 +363,7 @@ header .header-content h2 {
     width: auto;
 }
 
-.contenedorFooter .redes .imagenesRedes{
+.contenedor-footer .redes .imagenes-redes {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -397,41 +372,36 @@ header .header-content h2 {
     cursor: pointer;
 }
 
-
-.usuario{
+.usuario {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-left: 40rem;
-
 }
 
-.usuario .arrow{
+.usuario .arrow {
     cursor: pointer;
-
 }
 
-.usuario .usuarioimg{
+.usuario .usuarioimg {
     transform: scale(0.9);
 }
 
-.usuario .bandera{
+.usuario .bandera {
     padding: 1rem;
 }
 
-
-.usuario p{
+.usuario p {
     padding: 0 .5rem;
     font-family: var(--fuente-principal);
     cursor: pointer;
     font-size: var(--tamano-fuente-menu);
-
 }
-.usuario p:hover{
+
+.usuario p:hover {
     color: var(--color-resaltar);
 }
 
-
-.usuario .micuenta{
-margin-right: 2.5rem;
+.usuario .micuenta {
+    margin-right: 2.5rem;
 }
