@@ -79,7 +79,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    background-image: url('path/to/main.png');
+    background-image: url('../images/main.png');
     background-size: cover;
     background-position: center;
 }
@@ -174,9 +174,12 @@ header {
 }
 
 footer {
-    background-color: var(--color-primario);
+    background-color: var(--color-secundario);
     padding: 20px;
     text-align: center;
+}
+footer nav{
+    background-color: var(--color-secundario);
 }
 
 footer nav ul {
