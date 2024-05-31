@@ -396,3 +396,42 @@ header .header-content h2 {
     margin: 0 auto;
     cursor: pointer;
 }
+
+
+.usuario{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 40rem;
+
+}
+
+.usuario .arrow{
+    cursor: pointer;
+
+}
+
+.usuario .usuarioimg{
+    transform: scale(0.9);
+}
+
+.usuario .bandera{
+    padding: 1rem;
+}
+
+
+.usuario p{
+    padding: 0 .5rem;
+    font-family: var(--fuente-principal);
+    cursor: pointer;
+    font-size: var(--tamano-fuente-menu);
+
+}
+.usuario p:hover{
+    color: var(--color5);
+}
+
+
+.usuario .micuenta{
+margin-right: 2.5rem;
+}
