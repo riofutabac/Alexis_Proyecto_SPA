@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPA - Todos</title>
-    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="stylesheet" href="./estilos/estilos.css" />
 </head>
+
 <body>
     <!-- Barra de navegación -->
     <nav>
         <ul>
-            <li><a href="#promociones">Promociones</a></li>
-            <li><a href="#fotos">Fotos</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#mapa">Mapa</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="#promociones">PROMOCIONES</a></li>
+            <li><a href="#fotos">FOTOS</a></li>
+            <li><a href="#servicios">SERVICIOS</a></li>
+            <li><a href="#mapa">MAPA</a></li>
+            <li><a href="#contacto">CONTACTOS</a></li>
         </ul>
     </nav>
 
@@ -22,33 +24,37 @@
     <header>
         <div class="header-content">
             <h1>SPA - Todos</h1>
-            <p>Regálate un momento de paz y consiente a tu piel en el mejor lugar</p>
-            <div class="reservation">
-                <input type="text" placeholder="Reserva tu cita" aria-label="Reserva tu cita">
-                <input type="text" placeholder="Código promocional" aria-label="Código promocional">
-            </div>
+            <p>
+                Regálate un momento de paz y consiente a tu piel en el mejor lugar
+            </p>
         </div>
     </header>
+    <div class="reservation">
+        <label for="reserva-cita">RESERVA TU CITA</label>
+        <input type="text" id="reserva-cita" />
+        <label for="codigo-promocional">CÓDIGO PROMOCIONAL</label>
+        <input type="text" id="codigo-promocional" placeholder="CODIGO" aria-label="Código promocional" />
+    </div>
 
     <!-- Apartado de cartas de servicios -->
     <section id="servicios">
         <article class="servicio">
             <h2>Masaje de pies</h2>
-            <img src="imagen_pies.jpg" alt="Masaje de pies">
+            <img src="./images/pies.png" alt="Masaje de pies" />
             <p>Esta es una descripción de la opción en cuestión ...</p>
             <p>$65</p>
             <button>Reservar</button>
         </article>
         <article class="servicio">
             <h2>Masaje relajante</h2>
-            <img src="imagen_relajante.jpg" alt="Masaje relajante">
+            <img src="./images/relajante.png" alt="Masaje relajante" />
             <p>Esta es una descripción de la opción en cuestión ...</p>
             <p>$60</p>
             <button>Reservar</button>
         </article>
         <article class="servicio">
             <h2>Masaje con bambú</h2>
-            <img src="imagen_bambu.jpg" alt="Masaje con bambú">
+            <img src="./images/bambu.png" alt="Masaje con bambú" />
             <p>Esta es una descripción de la opción en cuestión ...</p>
             <p>$58</p>
             <button>Reservar</button>
@@ -101,4 +107,5 @@
         </div>
     </footer>
 </body>
+
 </html>
