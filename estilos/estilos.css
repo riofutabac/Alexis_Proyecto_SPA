@@ -1,0 +1,31 @@
+:root {
+    /* Colores */
+    --color-primario: #A3A656; /* Verde oscuro */
+    --color-secundario: #384001; /* Verde más oscuro */
+    --color-resaltar: #FFFF00; /* Amarillo */
+    --color-fondo: #F2F6F6; /* Gris claro */
+    --color-texto: #000; /* Negro */
+    --color-texto-claro: #fff; /* Blanco */
+
+    /* Fuentes */
+    --fuente-principal: 'Inter', sans-serif;
+    --fuente-titulos: 'Titulo2', sans-serif;
+    --fuente-cursiva: 'Romanesco', sans-serif;
+
+    /* Tamaños de fuente */
+    --tamano-fuente-principal: 16px;
+    --tamano-fuente-titulos: 32px;
+    --tamano-fuente-grande: 96px;
+    --tamano-fuente-pequeña: 14px;
+
+    /* Dimensiones */
+    --altura-header: 70px;
+    --altura-footer: 97px;
+    --radio-circulo: 50%;
+    --radio-boton: 35px;
+
+    /* Otros */
+    --border-radius-input: 10px;
+    --border-radius-button: 35px;
+}
+
